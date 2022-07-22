@@ -47,6 +47,7 @@ number = json.loads(reply)
 
 ````
 
+![](seq_diagram.png)
 
 
 
