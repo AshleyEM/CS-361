@@ -1,5 +1,7 @@
 # COMMUNICATION CONTRACT
 
+This microservice generates a random integer between a given `min` and `max` value in JSON format. The service runs continuously until it receives a stop message.
+
 ## Request number
 
 
@@ -29,23 +31,21 @@ socket.send_json({"min" :1, "max":20})
 
 ## Get number
 
-5) Get reply from number generator (in bytes)
+5) Get reply from number generator as JSON
 
 
 ````
-reply = socket.recv()
+reply = socket.recv_json()
 
 ````
 
-6) Convert bytes to JSON
+## Stop program
 
+1) Send `{"stop": 0}` to end program (the value '0' can be any value)
 
-````
-import json
-number = json.loads(reply)
+``socket.send_json({"stop" : 0})``
 
-
-````
+## UML diagram
 
 ![](seq_diagram.png)
 
