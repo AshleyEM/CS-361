@@ -14,7 +14,7 @@ context = zmq.Context()
 socket = context.socket(zmq.REQ)
 ````
 
-2) Connect to port 5555 to talk to number generator
+2) Connect to "tcp://localhost:#" to talk to number generator. Replace '#' with a number of your choice.
 
 ````
 socket.connect("tcp://localhost:5555")
