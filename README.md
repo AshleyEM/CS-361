@@ -41,9 +41,11 @@ reply = socket.recv_json()
 
 ## Stop program
 
-1) Send `{"stop": 0}` to end program (the value '0' can be any value)
+Stop the program by sending ``{"stop" : <any value>}``.
+  
+You can also request and stop the service in one message by adding the key "stop" to your JSON request:
 
-``socket.send_json({"stop" : 0})``
+``socket.send_json({"min" : 0, "max" : 4, "stop" : 0})``
 
 ## UML diagram
 
