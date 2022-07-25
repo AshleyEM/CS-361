@@ -16,7 +16,7 @@ context = zmq.Context()
 socket = context.socket(zmq.REQ)
 ````
 
-2) Connect to "tcp://localhost:#" to talk to number generator. Replace '#' with a number of your choice.
+2) Connect to "tcp://localhost:5555" to talk to number generator.
 
 ````
 socket.connect("tcp://localhost:5555")
@@ -75,6 +75,10 @@ message = socket.recv_json()
 socket.send_json({"stop" : 0})
 
 ````
+
+## Modifications
+
+You can change the port number within the number generator (this example uses 5555). You can also change the 'stop' message.
 
 ## UML diagram
 
