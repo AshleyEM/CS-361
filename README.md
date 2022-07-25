@@ -31,17 +31,14 @@ socket.send_json( {"min" : 1, "max" : 20} )
 
 ## Get number
 
-5) Get reply from number generator as JSON
+5) Get reply from number generator as JSON. The reply will be in the form ``{"num" : <int>}``.
 
 
 ````
 reply = socket.recv_json()  
 number = reply["num"]
 
-# reply will be in the form {"num" : <int>}
-
 ````
-
 
 
 ## Stop program
