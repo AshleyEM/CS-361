@@ -47,7 +47,7 @@ reply = socket.recv_json()
 
 ## UML diagram
 
-![](seq_diagram.png)
+![](uml_diagram.png)
 
 
 
