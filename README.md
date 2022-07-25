@@ -51,7 +51,7 @@ You can also request and stop the service in one message by adding the key "stop
 
 ## UML diagram
 
-![](uml_sequence_diagram.png)
+![](diagram.png)
 
 
 
