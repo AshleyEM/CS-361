@@ -1,6 +1,6 @@
 # COMMUNICATION CONTRACT
 
-This microservice generates a random integer between a given min/max value. The service runs continuously until it receives a stop message.
+This microservice generates a random integer between a given min/max value (inclusive). The service runs continuously until it receives a stop message.
 
 It communcates through request/reply sockets using Python's ZMQ library.
 
